@@ -34,7 +34,7 @@ def main():
 
         # Create the embeddings for searching
           
-        embeddings = OpenAIEmbeddings(openai_api_key = "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")
+        embeddings = OpenAIEmbeddings(openai_api_key = "")
         knowledge_base = FAISS.from_texts(chunks, embeddings)
 
         user_question = st.text_input("Ask a question about your PDF:")
